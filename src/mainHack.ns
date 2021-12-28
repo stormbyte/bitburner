@@ -210,7 +210,7 @@ export async function main(ns) {
 
     ns.tprint(
       `[${localeHHMMSS()}] Selected ${bestTarget} for a target. Planning to ${action} the server. Will wake up around ${localeHHMMSS(
-        new Date().getTime() + weakenTime + 300
+        new Date().getTime() + 300
       )}`
     )
     ns.tprint(
@@ -332,6 +332,6 @@ export async function main(ns) {
       }
     }
 
-    await ns.sleep(weakenTime + 300)
+    await ns.sleep(300)
   }
 }
